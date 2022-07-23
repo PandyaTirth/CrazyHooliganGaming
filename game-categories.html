@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrazyHooligan Gaming | Game Categories</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.PNG">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fontawesome.all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="window.scrollTo(0,0);">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+            <a class="logoContainer mx-3" href="index.html"><img class="logoImg" src="./images/logo.PNG" alt="logo">
+                <!-- <span class="badge bg-primary">v5.1.1</span> -->
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-content">
+                <div class="hamburger-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item me-2">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-2 dropdown active">
+                        <a class="nav-link dropdownCategory text-light" href="game-categories.html">Game Categories</a>
+                        <!-- <a class="nav-link dropdownCategory dropdown-toggle text-light" href="game-categories.html"
+                            data-bs-toggle="dropdown" data-bs-auto-close="outside">Game Categories</a> -->
+                        <!-- <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item" href="#">Adventure</a></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Shooter</a>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href="">First-Person Shooter</a></li>
+                                    <li><a class="dropdown-item" href="">Third-Person Shooter</a></li>
+                                </ul>
+                            </li <li><a class="dropdown-item" href="#">Strategy</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Simulation</a></li>
+                    <li><a class="dropdown-item" href="blog.html">Multiplayer</a></li>
+                    <!-- <li class="dropstart">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Submenu
+                                    Left</a>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                                    <li><a class="dropdown-item" href=""> Third level 2</a></li>
+                                    <li><a class="dropdown-item" href=""> Third level 3</a></li>
+                                    <li><a class="dropdown-item" href=""> Third level 4</a></li>
+                                    <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                                </ul>
+                            </li> -->
+                    <!-- <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">Submenu Right</a>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href=""> Second level 1</a></li>
+                                    <li><a class="dropdown-item" href=""> Second level 2</a></li>
+                                    <li><a class="dropdown-item" href=""> Second level 3</a></li>
+                                    <li class="dropend">
+                                        <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                            data-bs-auto-close="outside">Let's go deeper!</a>
+                                        <ul class="dropdown-menu dropdown-submenu shadow">
+                                            <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                                            <li><a class="dropdown-item" href=""> Third level 2</a></li>
+                                            <li><a class="dropdown-item" href=""> Third level 3</a></li>
+                                            <li><a class="dropdown-item" href=""> Third level 4</a></li>
+                                            <li class="dropend">
+                                                <a href="#" class="dropdown-item dropdown-toggle"
+                                                    data-bs-toggle="dropdown">Still don't have enough? Go much
+                                                    deeper!</a>
+                                                <ul class="dropdown-menu dropdown-submenu shadow">
+                                                    <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                                                    <li><a class="dropdown-item" href=""> Third level 2</a></li>
+                                                    <li><a class="dropdown-item" href=""> Third level 3</a></li>
+                                                    <li><a class="dropdown-item" href=""> Third level 4</a></li>
+                                                    <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul> -->
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link text-light" href="live-streams.html">Live Streams</a>
+                </li>
+                <li class="nav-item dropdown dropdown-mega position-static">
+                    <a class="nav-link dropdown-toggle dropdownCategory text-light me-4" href="#" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside">Events</a>
+                    <div class="dropdown-menu eventsDropdown shadow">
+                        <div class="mega-content px-4">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4 tournamentList">
+                                        <h5><i class="fa-solid fa-users me-2"></i>Tournaments</h5>
+                                        <div class="list-group">
+                                            <a class="list-group-item" href="#">Counter Strike : Global Offensive</a>
+                                            <a class="list-group-item" href="#">Valorant</a>
+                                            <a class="list-group-item" href="#">Call of Duty : Warzone</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5><i class="fa-solid fa-gifts me-2"></i>Skins for Sale</h5>
+                                        <div class="card">
+                                            <img src="./images/valo_skins.jpg" class="img-fluid" alt="image">
+                                            <div class="card-body">
+                                                <p class="card-text">Check out latest skins released and up for sale in
+                                                    Valorant.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5><i class="fa-solid fa-hand-holding-dollar me-2"></i>Share Your Support</h5>
+                                        <div class="card">
+                                            <img src="./images/ukraine_flag.jpg" class="img-fluid" alt="image">
+                                            <div class="card-body">
+                                                <p class="card-text">Support Ukraine by making your generous donation <a
+                                                        href="#">here</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 py-4 trendingList">
+                                        <h5><i class="fa fa-line-chart me-2" aria-hidden="true"></i>Trending Games</h5>
+                                        <div class="list-group">
+                                            <a class="list-group-item" href="#">God Of War</a>
+                                            <a class="list-group-item" href="#">Assasin's Creed : Odyssey</a>
+                                            <a class="list-group-item" href="#">The Witcher 3</a>
+                                            <a class="list-group-item" href="#">Call of Duty : Modern Warfare</a>
+                                            <a class="list-group-item" href="#">Apex Legends</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-2 text-light" href="new-games.html" aria-current="page">New Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="contact-us.html" aria-current="page">Contact Us</a>
+                </li>
+                </ul>
+                <form class="d-flex ms-lg-3">
+                    <div class="input-group">
+                        <input class="form-control border-0 mr-2 w-100" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="searchBtn btn btn-primary border-0" type="submit"><i class="fa fa-search"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Game Categories -->
+    <section class="mainSection">
+        <div class="container">
+            <div class="sectionHeader mb-3">
+                <h1 class="sectionTitle fadeInLeft">Game Categories</h1>
+            </div>
+            <div class="gameCategory adventureGames">
+                <h2 class="fadeIn">Adventure Games</h2>
+                <div class="gameTiles fadeInRight row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('gta5')">
+                            <img src="./images/gta5.jpg" alt="gta5">
+                            <h4 class="mb-0 text-center">Grand Theft Auto V</h4>
+                        </div>
+                    </div>       
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('dyingLight')">
+                            <img src="./images/dying_light.jpg" alt="dying_light">
+                            <h4 class="mb-0 text-center">Dying Light</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('cyberpunk2077')">
+                            <img src="./images/cyberpunk_2077.jpg" alt="cyberpunk_2077">
+                            <h4 class="mb-0 text-center">Cyberpunk 2077</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('metalGearSolid')">
+                            <img src="./images/metal_gear_solid.jpg" alt="metal_gear_solid">
+                            <h4 class="mb-0 text-center">Metal Gear Solid</h4>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+            <div class="gameCategory actionGames">
+                <h2 class="fadeIn">Action Games</h2>
+                <div class="gameTiles fadeInLeft row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('assassinsCreedOrigins')">
+                            <img src="./images/assassins_creed_origins.jpg" alt="assassins_creed_origins">
+                            <h4 class="mb-0 text-center">Assasin's Creed</h4>
+                        </div>
+                    </div>       
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('godOfWar')">
+                            <img src="./images/god_of_war.jpg" alt="god_of_war">
+                            <h4 class="mb-0 text-center">God of War</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('mortalKombat11')">
+                            <img src="./images/mortal_kombat.jpg" alt="mortal_kombat">
+                            <h4 class="mb-0 text-center">Mortal Kombat</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('theWitcher')">
+                            <img src="./images/the_witcher.jpg" alt="the_witcher">
+                            <h4 class="mb-0 text-center">The Witcher</h4>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+            <div class="gameCategory FPSGames">
+                <h2 class="fadeIn">First-Person Games</h2>
+                <div class="gameTiles fadeInRight row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('metroExodus')">
+                            <img src="./images/metro_exodus.jpg" alt="metro_exodus">
+                            <h4 class="mb-0 text-center">Metro : Exodus</h4>
+                        </div>
+                    </div>       
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('tombRaider')">
+                            <img src="./images/tomb_raider.jpg" alt="tomb_raider">
+                            <h4 class="mb-0 text-center">Tomb Raider</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('callOfDutyGhosts')">
+                            <img src="./images/call_of_duty_ghosts.jpg" alt="call_of_duty_ghosts">
+                            <h4 class="mb-0 text-center">Call of Duty : Ghosts</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('halo5')">
+                            <img src="./images/halo5.jpg" alt="halo5">
+                            <h4 class="mb-0 text-center">Halo 5</h4>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+            <div class="gameCategory TPSGames">
+                <h2 class="fadeIn">Third-Person Games</h2>
+                <div class="gameTiles fadeInLeft row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('devilMayCry5')">
+                            <img src="./images/devil_may_cry.jpg" alt="devil_may_cry">
+                            <h4 class="mb-0 text-center">Devil May Cry</h4>
+                        </div>
+                    </div>       
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('deathStranding')">
+                            <img src="./images/death_stranding.jpg" alt="death_stranding">
+                            <h4 class="mb-0 text-center">Death Stranding</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('lifeIsStrange')">
+                            <img src="./images/life_is_strange.jpg" alt="life_is_strange">
+                            <h4 class="mb-0 text-center">Life is Strange</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('diablo3')">
+                            <img src="./images/diablo3.jpg" alt="diablo3">
+                            <h4 class="mb-0 text-center">Diablo 3</h4>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+            <div class="gameCategory strategyGames">
+                <h2 class="fadeIn">Strategy Games</h2>
+                <div class="gameTiles fadeInRight row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('ageOfEmpires4')">
+                            <img src="./images/age_of_empires.jpg" alt="age_of_empires">
+                            <h4 class="mb-0 text-center">Age of Empires</h4>
+                        </div>
+                    </div>       
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('minecraft')">
+                            <img src="./images/minecraft.jpg" alt="minecraft">
+                            <h4 class="mb-0 text-center">Minecraft</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('amongUs')">
+                            <img src="./images/among_us.jpg" alt="among_us">
+                            <h4 class="mb-0 text-center">Among Us</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('dota2')">
+                            <img src="./images/dota2.jpg" alt="dota2">
+                            <h4 class="mb-0 text-center">Dota 2</h4>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+            <div class="gameCategory multiplayerGames">
+                <h2 class="fadeIn">Multiplayer Games</h2>
+                <div class="gameTiles fadeInLeft row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('valorant')">
+                            <img src="./images/valo_game.jpg" alt="valo_game">
+                            <h4 class="mb-0 text-center">Valorant</h4>
+                        </div>
+                    </div>       
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('csgo')">
+                            <img src="./images/csgo.png" alt="csgo">
+                            <h4 class="mb-0 text-center">CSGO</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('apexLegends')">
+                            <img src="./images/apex_legends.jpg" alt="apex_legends">
+                            <h4 class="mb-0 text-center">Apex Legends</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="card games" onclick="openGameCategoryModal('pubg')">
+                            <img src="./images/pubg.jpg" alt="pubg">
+                            <h4 class="mb-0 text-center">PUBG</h4>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="gameTypeInfo" class="modal fade gameTypeInfo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="gameInfo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="gameTypeTitle">Sifu</h5>
+                        <i class="fa-solid fa-xmark" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+                        <!-- <button type="button" class="btn-close"></button> -->
+                    </div>
+                    <div class="modal-body">
+                        <div class="releaseInfo d-flex justify-content-between">
+                            <p>Release year : <span id="gameReleaseYear">2020</span></p>
+                            <p>Developed by : <span id="gameDeveloper">Ubisoft</span></p>
+                        </div>
+                        <div class="downloadOptions">
+                            <p>You can download this game from following links -</p>
+                            <div class="downloadLinks">
+                                <a href="#">[APK Mirror Download]</a>
+                                <a href="#">[Torrent Download]</a>
+                                <a href="#">[Premium Download]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="scrollToTopBtn">
+        <button onclick="scrollToTop()" id="scrollTopBtn" class="btn btn-primary" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="d-md-flex d-block justify-content-between align-items-center">
+            <p class="text-center text-md-left">© Copyrights @CrazyHooliganGaming 2022</p>
+            <div class="d-flex justify-content-center text-center text-md-left">
+                <a class="me-2" href="privacy-policy.html">Privacy Policy</a>
+                |
+                <a class="ms-2" href="terms-and-conditions.html">Terms and Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
